@@ -45,7 +45,7 @@ def read_file(file_name):
     #print(file.read())
     return file.read()
 
-def main():
+def shift_cypher():
   while True:
     print("""1) Make a code
 2) Decode a Message
@@ -78,4 +78,4 @@ def main():
     else:
       print("Sorry only options 1,2 or 3 are valid.\n")
 
-main()
+shift_cypher()
