@@ -70,6 +70,7 @@ def shift_cypher():
     elif selection == 3:
       file_name = input("Please enter the name of the file: ")
       file_content = read_file(file_name)
+      shift_number = int(input("Shift Number: ")
       decode(file_content, shift_number)
 
     elif selection == 4:
