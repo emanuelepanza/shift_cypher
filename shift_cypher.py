@@ -79,4 +79,3 @@ def shift_cypher():
     else:
       print("Sorry only options 1,2 or 3 are valid.\n")
 
-shift_cypher()
