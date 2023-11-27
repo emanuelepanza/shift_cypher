@@ -16,7 +16,6 @@ def encode(text, shift_number):
       shifted_letter = letter
     shifted_characters.append(shifted_letter)
     shifted_string = "".join(shifted_characters)
-  print(shifted_string)
   return shifted_string
 
 def decode(text, shift_number):
@@ -33,7 +32,6 @@ def decode(text, shift_number):
       shifted_letter = letter
     shifted_characters.append(shifted_letter)
     shifted_string = "".join(shifted_characters)
-  print(shifted_string)
   return shifted_string
 
 def save_to_file(file_name, encoded_string):
@@ -57,6 +55,7 @@ def shift_cypher():
       text = input("Text: ")
       shift_number = int(input("Shift Number: "))
       encoded_string = encode(text, shift_number)
+      print(encoded_string)
       save = input("Do you want to save the text? (Y/N)")
       if save == "Y":
         file_name = input("Please enter the name of the file: ")
@@ -65,7 +64,8 @@ def shift_cypher():
     elif selection == 2:
       text = input("Text: ")
       shift_number = int(input("Shift Number: "))
-      decode(text, shift_number)
+      decoded_string = decode(text, shift_number)
+      print(decoded_string)
 
     elif selection == 3:
       file_name = input("Please enter the name of the file: ")
